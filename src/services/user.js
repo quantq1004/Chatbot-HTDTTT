@@ -83,7 +83,7 @@ const verifyAccessToken = async (accessToken) => {
 
     return data;
   } catch (error) {
-    logger.error(error);
+    console.error(`Failed to verify token: ${error.message}`);
     throw new CustomError(codes.UNAUTHORIZED);
   }
 };
