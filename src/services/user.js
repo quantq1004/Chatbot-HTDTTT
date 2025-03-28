@@ -79,7 +79,7 @@ const verifyAccessToken = async (accessToken) => {
     data = camelCaseKeys(data);
     const { sub: userId } = data;
 
-    if (!userId) throw new CustomError(codes.UNAUTHORIZED);
+    if (!userId) throw new CustomError(errorCodes.UNAUTHORIZED);
 
     return data;
   } catch (error) {
