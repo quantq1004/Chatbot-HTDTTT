@@ -1,4 +1,5 @@
 const asyncMiddleware = require('./async');
+const CustomError = require('../errors/CustomError');
 const errorCodes = require('../errors/code');
 const authService = require('../services/user');
 
